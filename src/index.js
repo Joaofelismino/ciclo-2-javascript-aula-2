@@ -7,13 +7,14 @@
 // area = largura * altura;
 
 // Dimensões da parede (largura e altura em metros)
-var largura = 5;
-var altura = 4;
+const largura = 5;
+const altura = 4;
 
 // Calculando a área da parede
+const area = largura*altura
 
 // Exibindo o resultado no console
-console.log("A área da parede é:");
+console.log("A área da parede é: " + area);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -25,15 +26,15 @@ console.log("A área da parede é:");
 // usuário e exibir uma mensagem de boas-vindas.
 
 // Nome e sobrenome inseridos pelo usuário
-var nome = "João";
-var sobrenome = "Silva";
+const nome = "João";
+const sobrenome = "Silva";
 
 // Juntando os nomes com a mensagem de boas-vindas
-  
-       //seu código
 
+       //seu código
+const nome_completo = nome+sobrenome
 // Exibindo a mensagem no console
-console.log();
+console.log ("Bem vindo " + nome_completo);
 
 
 //-------------------------------------------------------------------------------------------------
@@ -47,15 +48,16 @@ console.log();
 // considerando que todos os anos têm 365 dias.
 
 // Idade do funcionário em anos
-var idadeEmAnos = 30;
+const idadeEmAnos = 30;
 
 // Calculando anos em dias
   
       //seu código
-
+const Um_Ano_em_dias = 360
+const CalculoAnos = idadeEmAnos*Um_Ano_em_dias
 
 // Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log ("O funcionário viveu aproximadamente " + CalculoAnos + " dias");
 
 //-------------------------------------------------------------------------------------------------
 
@@ -68,12 +70,12 @@ console.log("O funcionário viveu aproximadamente... dias");
 //  se o evento durou 135 minutos, você deve dizer que ele durou 2 horas e 15 minutos.
 
 // Duração total do evento em minutos
-var duracaoEmMinutos = 135;
+const duracaoEmMinutos = 135;
 
 // Calculando horas e minutos
   
       //seu código
-
-
+const hora = Math.floor(duracaoEmMinutos / 60);
+const minutosRestantes = duracaoEmMinutos % 60;
 // Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log("O evento durou " + hora + " e " + minutosRestantes + " minutos.");
